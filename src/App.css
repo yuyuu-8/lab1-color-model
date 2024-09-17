@@ -1,38 +1,41 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Центрирует всё по вертикали и горизонтали */
+  flex-direction: column; /* Размещает элементы по вертикали */
+  text-align: center; /* Центрирует текст */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.color-box {
+  width: 250px; /* Увеличиваем размер квадрата */
+  height: 250px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 20px; /* Отступ снизу для отделения от других элементов */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+colorPicker {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  margin: 0 10px; /* Отступы между полями ввода */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px; /* Отступ сверху */
+  cursor: pointer;
+}
+
+input[type="color"] {
+  width: 300px; /* Увеличиваем размер палитры */
+  height: 50px;
 }
