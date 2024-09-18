@@ -18,12 +18,10 @@ function ColorPicker() {
       warningMessage += 'RGB value out of range (0-255). ';
     }
 
-    // Проверяем диапазон CMYK
     if (checkRange(colorCMYK.c, 0, 100) || checkRange(colorCMYK.m, 0, 100) || checkRange(colorCMYK.y, 0, 100) || checkRange(colorCMYK.k, 0, 100)) {
       warningMessage += 'CMYK value out of range (0-100). ';
     }
 
-    // Проверяем диапазон LAB
     if (checkRange(colorLAB.l, 0, 100) || checkRange(colorLAB.a, -128, 127) || checkRange(colorLAB.b, -128, 127)) {
       warningMessage += 'LAB value out of range (L: 0-100, a: -128-127, b: -128-127). ';
     }
@@ -111,7 +109,7 @@ function ColorPicker() {
 
   return (
     <div style={{ display: 'flex', alignItems: 'center' }}>
-      <div className="color-box" style={{ backgroundColor: rgbColor, width: '100px', height: '100px', marginRight: '20px' }}>
+      <div className="color-box" style={{ backgroundColor: rgbColor, width: '200px', height: '200px', marginRight: '20px' }}>
       </div>
 
       <div>

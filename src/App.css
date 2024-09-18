@@ -2,20 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Центрирует всё по вертикали и горизонтали */
-  flex-direction: column; /* Размещает элементы по вертикали */
-  text-align: center; /* Центрирует текст */
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
 }
 
 .color-box {
-  width: 250px; /* Увеличиваем размер квадрата */
+  width: 250px;
   height: 250px;
   border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  margin-bottom: 20px; /* Отступ снизу для отделения от других элементов */
+  margin-bottom: 20px;
 }
 
 colorPicker {
@@ -25,17 +25,17 @@ colorPicker {
 }
 
 label {
-  margin: 0 10px; /* Отступы между полями ввода */
+  margin: 0 10px;
 }
 
 button {
   padding: 10px 20px;
   font-size: 16px;
-  margin-top: 20px; /* Отступ сверху */
+  margin-top: 20px;
   cursor: pointer;
 }
 
 input[type="color"] {
-  width: 300px; /* Увеличиваем размер палитры */
+  width: 300px;
   height: 50px;
 }

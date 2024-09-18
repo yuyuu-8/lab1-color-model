@@ -1,4 +1,3 @@
-// Конвертация RGB в CMYK
 export const rgbToCmyk = (r, g, b) => {
   let c = 1 - (r / 255);
   let m = 1 - (g / 255);
@@ -17,7 +16,6 @@ export const rgbToCmyk = (r, g, b) => {
   return { c: c * 100, m: m * 100, y: y * 100, k: k * 100 };
 };
 
-// Конвертация CMYK в RGB
 export const cmykToRgb = (c, m, y, k) => {
   const r = 255 * (1 - c / 100) * (1 - k / 100);
   const g = 255 * (1 - m / 100) * (1 - k / 100);
@@ -25,7 +23,6 @@ export const cmykToRgb = (c, m, y, k) => {
   return { r: Math.round(r), g: Math.round(g), b: Math.round(b) };
 };
 
-// Конвертация RGB в XYZ
 export const rgbToXyz = (r, g, b) => {
   r = r / 255;
   g = g / 255;
@@ -45,7 +42,6 @@ export const rgbToXyz = (r, g, b) => {
   return { x, y, z };
 };
 
-// Конвертация XYZ в LAB
 export const xyzToLab = (x, y, z) => {
   const refX = 95.047;
   const refY = 100.000;
@@ -65,7 +61,6 @@ export const xyzToLab = (x, y, z) => {
   return { l, a, b };
 };
 
-// Конвертация LAB в XYZ
 export const labToXyz = (l, a, b) => {
   const refX = 95.047;
   const refY = 100.000;
@@ -86,7 +81,6 @@ export const labToXyz = (l, a, b) => {
   return { x: xConverted, y: yConverted, z: zConverted };
 };
 
-// Конвертация XYZ в RGB
 export const xyzToRgb = (x, y, z) => {
   const rLinear = x * 3.2404542 + y * -1.5371385 + z * -0.4985314;
   const gLinear = x * -0.9692660 + y * 1.8760108 + z * 0.0415560;
