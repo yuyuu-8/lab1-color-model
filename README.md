@@ -1,15 +1,9 @@
 Stepuk Anastasiya, group 9, 10 variant (CMYK ↔ LAB ↔ RGB)
 
 sliders for each component of each model for smooth color changes, input fields for the numerical value of each component (within the acceptable values)
+if value of any model component is out of range the corresponding message is shown up
 
-        "@testing-library/jest-dom": "^5.17.0",
-        "@testing-library/react": "^13.4.0",
-        "@testing-library/user-event": "^13.5.0",
-        "react": "^18.3.1",
-        "react-color": "^2.19.3",
-        "react-dom": "^18.3.1",
-        "react-scripts": "5.0.1",
-        "web-vitals": "^2.1.4"
+to run the app: install all the files and run "npm start" in cmd
         
 # Getting Started with Create React App
 
