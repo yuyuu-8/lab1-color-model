@@ -1,9 +1,9 @@
-Stepuk Anastasiya, group 9, 10 variant (CMYK ↔ LAB ↔ RGB)
+# Stepuk Anastasiya, group 9, 10 variant (CMYK ↔ LAB ↔ RGB)
 
-sliders for each component of each model for smooth color changes, input fields for the numerical value of each component (within the acceptable values)
-if value of any model component is out of range the corresponding message is shown up
+Sliders for each component of each model for smooth color changes, input fields for the numerical value of each component (within the acceptable values)
+If value of any model component is out of range the corresponding message is shown up
 
-to run the app: install all the files and run "npm start" in cmd
+## **_To run the app:_** install all the files and run "npm start" in cmd
         
 # Getting Started with Create React App
 
